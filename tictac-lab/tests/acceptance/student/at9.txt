@@ -1,0 +1,25 @@
+new_game(";A", "C")
+undo
+undo
+new_game("A", "C")
+
+play("A", 1)
+
+-- not player's turn error
+play("A", 2)
+
+-- not player's turn error, even when button is taken
+play("A", 1)
+
+play("C", 3)
+redo
+
+
+play("A", 3)
+
+undo
+
+-- no such player error
+play("E", 2)
+redo
+

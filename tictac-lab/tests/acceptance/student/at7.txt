@@ -1,0 +1,29 @@
+new_game("A", "B")
+play("A", 1)
+--not this player's turn error
+play("A", 2)
+--button taken error
+play("B", 1)
+play("B", 2)
+--play redo before there's anything in the redo_stk
+redo
+--undo on play("B", 2)
+undo
+--redo on only one item in redo_stk
+redo
+undo
+redo
+redo
+undo
+undo
+-- not this player's turn
+play("A",2)
+play("B",1)
+undo
+undo
+redo
+redo
+redo
+redo
+
+

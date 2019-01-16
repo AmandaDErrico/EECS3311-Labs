@@ -1,0 +1,5 @@
+new_game("A", "B")
+new_game("A", "C")
+play("A", 1)
+new_game("A", "B")
+new_game("D", "E")

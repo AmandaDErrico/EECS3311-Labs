@@ -1,0 +1,21 @@
+new_game("A", "B")
+play("A", 1)
+--not this player's turn error
+play("A", 2)
+--button taken error
+play("B", 1)
+play("B", 2)
+--undo on play("B", 2)
+undo
+undo
+undo
+undo
+redo
+redo
+redo
+undo
+play("A", 2)
+undo
+undo
+play("A", 3)
+undo

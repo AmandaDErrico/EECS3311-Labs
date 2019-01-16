@@ -1,0 +1,15 @@
+new_game("A", "C")
+-- row win
+undo
+undo
+play("A", 1)
+undo
+play("C", 4)
+play("A", 1)
+play("A", 2)
+play("C", 5)
+play("A", 3)
+play("C", 4)
+play("A", 2)
+
+play_again

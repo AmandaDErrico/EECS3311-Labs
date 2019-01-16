@@ -1,0 +1,86 @@
+-- first command
+play_again
+
+-- tie
+new_game("D", "E")
+play_again
+play("D", 1)
+play("E", 4)
+play("D", 2)
+play("E", 5)
+play("D", 6)
+play("E", 3)
+play("D", 7)
+play("E", 8)
+play("D", 9)
+-- p1 tied, make p2 go next
+
+play_again
+play("E", 1)
+play("D", 4)
+play("E", 2)
+play("D", 5)
+play("E", 6)
+play("D", 3)
+play("E", 7)
+play("D", 8)
+play("E", 9)
+-- p2 tied, make p1 go next
+
+play_again
+play("D", 1)
+play("E", 4)
+play("D", 2)
+play("E", 5)
+play("D", 3)
+-- p1 plays first, make p2 go next
+
+play_again
+play("E", 1)
+play("D", 4)
+play("E", 2)
+play("D", 5)
+play("E", 6)
+play("D", 3)
+play("E", 7)
+play("D", 8)
+play("E", 9)
+-- p2 tied, make p1 go next 
+
+play_again
+play("D", 1)
+play("E", 4)
+play("D", 2)
+play("E", 5)
+play("D", 3)
+-- p2 plays next
+
+play_again
+
+play("E", 1)
+play("D", 4)
+play("E", 2)
+play("D", 5)
+play("E", 3)
+-- p2 wins, p1 goes next bc p2 went first this round
+
+play_again
+play("D", 1)
+play("E", 4)
+play("D", 2)
+play("E", 5)
+play("D", 9)
+play("E", 6)
+-- p2 plays next
+
+play_again
+play("E", 1)
+play("D", 4)
+play("E", 2)
+play("D", 5)
+play("E", 3)
+-- p1 plays next
+
+play_again
+
+

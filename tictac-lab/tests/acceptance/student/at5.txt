@@ -1,0 +1,4 @@
+new_game("A", "B")
+undo
+-- second undo makes undo_stk empty, then continues to set old strings
+undo

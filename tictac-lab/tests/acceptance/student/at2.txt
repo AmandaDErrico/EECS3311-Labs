@@ -1,0 +1,54 @@
+new_game("A", "B")
+
+-- column win
+play("A", 3)
+play("B", 2)
+play("A", 6)
+play("B", 5)
+play("A", 9)
+
+-- cleared everything in redo, nothing in redo stack
+redo
+redo
+undo
+
+new_game("A", "C")
+-- row win
+undo
+undo
+play("A", 1)
+undo
+play("C", 4)
+play("A", 1)
+play("A", 2)
+play("C", 5)
+play("A", 3)
+play("C", 4)
+play("A", 2)
+
+undo
+redo
+redo
+undo
+play_again
+
+-- tie
+new_game("D", "E")
+play("D", 1)
+play("E", 4)
+play("D", 2)
+play("E", 5)
+play("D", 6)
+play("E", 3)
+play("D", 7)
+play("E", 8)
+play("D", 9)
+
+undo
+undo
+redo
+undo
+
+play_again
+undo
+redo
